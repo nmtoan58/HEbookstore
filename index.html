@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HE Books Store</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/id.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="./img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick-theme.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" /> -->
+</head>
+<body>
+    <div class="wrap">
+        <div class="header-web">
+            <div class="container1">
+                <div class="header__nav-bar"> 
+                   <div class="wrap-nav-mobile">
+                    <div class="nav-mobile hide-list-nav">
+                        <input class="nav-mobile-checkbox" hidden type="checkbox" name="" id="nav-mobile-check">
+                        <label class="nav-mobile-label" for="nav-mobile-check"><i class="fas fa-bars"></i></label>
+                        <label for="nav-mobile-check" class="nav-overlay"></label>
+                        <div class="nav-mobile-list">
+                            <label for="nav-mobile-check" class="nav-time"><i class="far fa-times-circle"></i></label>
+                            <ul class="nav-mobile-list-list">
+                                <li class="nav-mobie-list-item">
+                                    <a href="./index.html" class="nav-mobile-list-item-link">Trang Chủ</a>
+                                </li>
+                                <li class="nav-mobie-list-item">
+                                    <a href="./category.html" class="nav-mobile-list-item-link">Thể Loại</a>
+                                </li>
+                                <li class="nav-mobie-list-item">
+                                    <a href="#" class="nav-mobile-list-item-link">Blog</a>
+                                </li>
+                                <li class="nav-mobie-list-item">
+                                    <a href="#" class="nav-mobile-list-item-link">Khác</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-mobile-search">
+                        <input hidden type="checkbox" name="" class="mobile-search-checkbox" id="mobile-search-check">
+                        <label class="mobile-search-icon" for="mobile-search-check"><i class="fas fa-search"></i></label>
+                        <div class="mobile-search-input">
+                            <input class="mobile-search-input-input" placeholder="Tìm Kiếm..." type="text">
+                            <span class="mobile-search-input-icon"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                   </div>
+                    <div class="header__nav-bar-bar">
+                        <a href="./index.html" class="header__nav-bar-logo">
+                            <img src="./img/logo.png" alt="" class="header__nav-bar-logo-img">
+                            <span class="header__navbar-logo-text">HE Books</span>
+                        </a>
+                        <ul class="header__nav-bar-list">
+                            <li class="header__nav-bar-items">
+                                <a href="./index.html" class="header__nav-bar-items-link">Trang Chủ</a>
+                            </li>
+                            <li class="header__nav-bar-items header__nav-bar-items-layout">
+                                <a href="./category.html" class="header__nav-bar-items-link">Thể Loại</a>
+                                <div class="header__nav-bar-items-form">
+                                    <ul class="header__nav-bar-items-form-list">
+                                        <li class="header__nav-bar-items-form-list-item">
+                                            <a href="./category.html" class="header__nav-bar-items-form-list-item-link">Sách Bán Chạy</a>
+                                        </li>
+                                        <li class="header__nav-bar-items-form-list-item">
+                                            <a href="./category.html" class="header__nav-bar-items-form-list-item-link">Sách Phổ Biến</a>
+                                        </li>
+                                        <li class="header__nav-bar-items-form-list-item">
+                                            <a href="./category.html" class="header__nav-bar-items-form-list-item-link">Sách Đang Giảm Giá</a>
+                                        </li>
+                                        <li class="header__nav-bar-items-form-list-item">
+                                            <a href="./category.html" class="header__nav-bar-items-form-list-item-link">Tất Cả Thể Loại</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__nav-bar-items">Blog</li>
+                        </ul>
+                    </div>
+                    <div class="header__nav-bar-search">
+                        <div class="header__nav-bar-user">
+                            <div class="header__nav-user-icon">
+                                <input type="checkbox" name="" hidden class="account-checkbox" id="account-check">
+                                <label class="hide-user" for="account-check"><span class="header__nav-user-icon"><i class="fas fa-user"></i></span></label>
+                                <label class="label-account-check header__nav-bar-user-text hide-on-tablet" for="account-check">
+                                    <span class="header__nav-user-icon"><i class="fas fa-user"></i></span>
+                                    Tài Khoản
+                                </label>                   
+                                <div class="header__nav-bar-user-form">
+                                    <div id="login-form" class="header__nav-bar-user-form-wrap">
+                                        <div class="header__nav-bar-user-form-title">
+                                            <span class="header__nav-bar-user-form-title-text">Đăng Nhập</span>
+                                        </div>
+                                        <div class="header__nav-bar-user-form-input-wrap">
+                                            <div class="header__nav-bar-user-form-input">
+                                                <input class="header__nav-bar-user-form-input-ip" placeholder="Tài Khoản" type="text">
+                                            </div>
+                                            <div class="header__nav-bar-user-form-input">
+                                                <input id="password" class="header__nav-bar-user-form-input-ip" placeholder="Mật Khẩu" type="password">
+                                                <span onclick="showPass()" class="header__nav-bar-user-form-input-pass-icon"><i id="icon-pass" class="fas fa-eye"></i></span>
+                                            </div>                                            
+                                        </div>
+                                        <div class="header__nav-bar-user-form-btn">
+                                            <button class="header__nav-bar-user-form-btn-btn">ĐĂNG NHẬP</button>
+                                        </div>
+                                        <div class="header__nav-bar-user-form-register-forgot">
+                                            <div class="header__nav-bar-user-form-register">Bạn chưa có tài khoản?
+                                                <span id="btn-register-extra" onclick="btn_Move_register()" class="header__nav-bar-user-form-register-text">Đăng Ký</span>
+                                            </div>
+                                            <div class="header__nav-bar-user-forgot-wrap">
+                                                <a href="#" class="header__nav-bar-user-form-forgot">
+                                                    Quên mật khẩu
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="register-form" class="header__nav-bar-user-regiter-form">
+                                        <div class="header__nav-bar-user-form-title">
+                                            <span class="header__nav-bar-user-form-title-text">Đăng Ký</span>
+                                        </div>
+                                        <div class="header__nav-bar-user-form-input-wrap">
+                                            <div class="header__nav-bar-user-form-input">
+                                                <input class="header__nav-bar-user-form-input-ip" placeholder="Email / Số điện thoại" type="text">
+                                            </div>
+                                            <div class="header__nav-bar-user-form-input">
+                                                <input class="header__nav-bar-user-form-input-ip" placeholder="Tài Khoản" type="text">
+                                            </div>
+                                            <div class="header__nav-bar-user-form-input">
+                                                <input id="password2" class="header__nav-bar-user-form-input-ip" placeholder="Mật Khẩu" type="password">
+                                                <span onclick="showPass2()" class="header__nav-bar-user-form-input-pass-icon"><i id="icon-pass2" class="fas fa-eye"></i></span>
+                                            </div>
+                                            <div class="header__nav-bar-user-form-input">
+                                                <input id="password3" class="header__nav-bar-user-form-input-ip" placeholder="Nhập lại mật khẩu" type="password">
+                                                <span onclick="showPass3()" class="header__nav-bar-user-form-input-pass-icon"><i id="icon-pass3" class="fas fa-eye"></i></span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="header__nav-bar-user-form-btn">
+                                            <button class="header__nav-bar-user-form-btn-btn">ĐĂNG KÝ</button>
+                                        </div>
+                                        <div class="header__nav-bar-user-form-register-forgot">
+                                            <div class="header__nav-bar-user-form-register">Bạn đã có tài khoản?
+                                                <span onclick="btn_Move_login()" class="header__nav-bar-user-form-register-text">Đăng nhập</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            </div>                            
+                        </div>                     
+                        <div class="header__nav-bar-search-wrap hide-on-mobile">
+                            <input class="header__nav-bar-search-input" placeholder="Tìm kiếm..." type="text">
+                            <span class="header__nav-bar-search-icon"><i class="fas fa-search"></i></span>
+                        </div>
+                        <div class="header__nav-bar-cart">
+                            <input hidden type="checkbox" class="cart-checkbox" name="" id="cart-check">
+                            <label class="hide-cart" for="cart-check"><span class="header__nav-cart-icon"><i class="fas fa-shopping-cart"></i></span></label>
+                            <label class="label-cart-check hide-on-tablet" for="cart-check">
+                                <span class="header__nav-cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                Giỏ Hàng
+                            </label>
+                            <div class="header__nav-cart-layer">
+                                <div class="header__nav-cart-layer-empty">
+                                    <div class="header__nav-cart-layer-empty-img">
+                                        <img src="./img/cart_empty/empty-cart.png" alt="" class="header__nav-cart-layer-empty-img-img">
+                                    </div>
+                                    <div class="header__nav-cart-layer-empty-btn">
+                                        <a href="./category.html" class="header__nav-cart-layer-empty-link">MUA HÀNG NGAY</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-layer">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 main-layer-img" src="./img/bg/christian-burri-V5d31LxEdyw-unsplash.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 main-layer-img" src="./img/bg/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 main-layer-img" src="./img/bg/robinson-greig-5lgFFxaQWHs-unsplash.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        <div class="grid-layer">
+            <div class="container1">
+                <div class="grid-layer-wrap">
+                    <div class="grid-item">
+                        <img class="grid-item-img" src="./img/grid/fang-wei-lin-H1IRUS1vEFA-unsplash.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-item-img" src="./img/grid/jaredd-craig-HH4WBGNyltc-unsplash.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-item-img" src="./img/grid/john-mark-smith-F_cHIM0Kcy4-unsplash.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-item-img" src="./img/grid/kourosh-qaffari-RrhhzitYizg-unsplash.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-item-img" src="./img/grid/sincerely-media-CXYPfveiuis-unsplash.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-item-img" src="./img/grid/studio-media-9DaOYUYnOls-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trending-product">
+            <div class="container1">
+                <div class="trending-product__title-wrap">
+                    <div class="trending-product__title">
+                        <span class="trending-product__title-text">Sản Phẩm</span>
+                        <span class="trending-product__title-text">Thịnh Hành</span>
+                    </div>
+                    <div class="trending-product__list-wrap">                      
+                        <a href="./category.html" class="trending-product__list-item-link">Xem Thêm</a>
+                    </div>
+                </div>
+                <div class="product-main-wrap slick-product">
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/dacnhantam.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">50.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Đắc Nhân Tâm</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Dale Carnegie</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/nghigiaulamgiau.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">60.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Think And Grow Rich</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Napoleon Hill</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/chagiauchangheo.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">65.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Rich Dad, Poor Dad</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Robert Kiyosaki</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/nhadaututhongminh.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">55.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Nhà Đầu Tư Thông Minh</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Benjamin Graham</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/quangganhlodivavuisong.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">50.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Quẳng Gánh Lo Đi & Vui Sống</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Dale Carnegie</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/book_item/demenphieuluuky.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">70.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Dế Mèn Phiêu Lưu Ký</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Tô Hoài</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                </div>
+                <!-- <div class="product_wrap">
+                    <a href="./detail_product.html" class="product__items">
+                        <div id="sp01" class="product_wrap-img"></div>
+                        <div class="product__name-wrap">
+                            <span class="product__name">Đắc Nhân Tâm</span>
+                            <span class="product__name-author">Dale Carnegie</span>
+                        </div>
+                        <div class="product__rate-wrap">
+                            <ul class="product__rate-list">
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items"><i class="fas fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <div class="product__cost-wrap">
+                            <span class="product__cost">50.000đ</span>
+                        </div> 
+                        <div class="product__add-to-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div>      
+                    </a>
+                    <a href="./detail_product.html" class="product__items">
+                        <div id="sp02" class="product_wrap-img"></div>
+                        <div class="product__name-wrap">
+                            <span class="product__name">Rich Dad, Poor Dad</span>
+                            <span class="product__name-author">Robert Kiyosaki</span>
+                        </div>
+                        <div class="product__rate-wrap">
+                            <ul class="product__rate-list">
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items"><i class="fas fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <div class="product__cost-wrap">
+                            <span class="product__cost">70.000đ</span>
+                        </div>
+                        <div class="product__add-to-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div>       
+                    </a>
+                    <a href="./detail_product.html" class="product__items">
+                        <div id="sp03" class="product_wrap-img"></div>
+                        <div class="product__name-wrap">
+                            <span class="product__name">Think And Grow Rich</span>
+                            <span class="product__name-author">Napoleon Hill</span>
+                        </div>
+                        <div class="product__rate-wrap">
+                            <ul class="product__rate-list">
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items"><i class="fas fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <div class="product__cost-wrap">
+                            <span class="product__cost">65.000đ</span>
+                        </div>
+                        <div class="product__add-to-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div>       
+                    </a>
+                    <a href="./detail_product.html" class="product__items">
+                        <div id="sp04" class="product_wrap-img"></div>
+                        <div class="product__name-wrap">
+                            <span class="product__name">Nhà Đầu Tư Thông Minh</span>
+                            <span class="product__name-author">Benjamin Graham</span>
+                        </div>
+                        <div class="product__rate-wrap">
+                            <ul class="product__rate-list">
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items"><i class="fas fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <div class="product__cost-wrap">
+                            <span class="product__cost">80.000đ</span>
+                        </div>
+                        <div class="product__add-to-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div>       
+                    </a>
+                    <a href="./detail_product.html" class="product__items">
+                        <div id="sp05" class="product_wrap-img"></div>
+                        <div class="product__name-wrap">
+                            <span class="product__name">Quẳng Gánh Lo Đi Và Vui Sống</span>
+                            <span class="product__name-author">Dale Carnegie</span>
+                        </div>
+                        <div class="product__rate-wrap">
+                            <ul class="product__rate-list">
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items product__rate-items--active"><i class="fas fa-heart"></i></li>
+                                <li class="product__rate-items"><i class="fas fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <div class="product__cost-wrap">
+                            <span class="product__cost">50.000đ</span>
+                        </div>
+                        <div class="product__add-to-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div>       
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        <div class="famous-quotes">
+            <div class="famous-quotes__quotes-wrap">
+                <div class="container1">
+                    <div class="famous-quotes__quotes-inner-wrap famuos-slick">
+                        <div class="famous-quotes__quotes-content">
+                            <div class="famous-quotes__quotes-inner">
+                                <div class="famous-quotes__quotes-avatar">
+                                    <img class="famous-quotes__quotes-avatar-img" src="./img/tacgia/RobertsonDavies.jpg" alt="">
+                                </div>
+                                <div class="famous-quotes__quotes-author--name">
+                                    <span class="famous-quotes__quotes-author--name-text">Robertson Davies</span>
+                                </div>
+                                <div class="famous-quotes__quotes-quote">
+                                    <span class="famous-quotes__quotes-quote-text">Một cuốn sách thực sự hay nên đọc trong tuổi trẻ, rồi đọc lại khi đã trưởng thành, và một lần nữa lúc tuổi già, giống như một tòa nhà đẹp nên được chiêm ngưỡng trong ánh bình minh, nắng trưa và ánh trăng.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="famous-quotes__quotes-content">
+                            <div class="famous-quotes__quotes-inner">
+                                <div class="famous-quotes__quotes-avatar">
+                                    <img class="famous-quotes__quotes-avatar-img" src="./img/tacgia/italocalvino.jpg" alt="">
+                                </div>
+                                <div class="famous-quotes__quotes-author--name">
+                                    <span class="famous-quotes__quotes-author--name-text">Italo Calvino</span>
+                                </div>
+                                <div class="famous-quotes__quotes-quote">
+                                    <span class="famous-quotes__quotes-quote-text">Chúng ta là ai, mỗi người trong chúng ta là ai nếu không phải tổ hợp của kinh nghiệm, thông tin, những cuốn sách chúng ta đã đọc, những điều chúng ta đã tưởng tượng ra?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="famous-quotes__quotes-content">
+                            <div class="famous-quotes__quotes-inner">
+                                <div class="famous-quotes__quotes-avatar">
+                                    <img class="famous-quotes__quotes-avatar-img" src="./img/tacgia/HenryDavidThoreau.jfif" alt="">
+                                </div>
+                                <div class="famous-quotes__quotes-author--name">
+                                    <span class="famous-quotes__quotes-author--name-text">Henry David Thoreau</span>
+                                </div>
+                                <div class="famous-quotes__quotes-quote">
+                                    <span class="famous-quotes__quotes-quote-text">Một cuốn sách thực sự hay dạy tôi nhiều điều hơn là đọc nó. Tôi phải nhanh chóng đặt nó xuống, bắt đầu sống theo những điều nó chỉ dẫn. Điều tôi bắt đầu bằng cách đọc, tôi phải kết thúc bằng hành động.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular-product">
+            <div class="container1">
+                <div class="trending-product__title-wrap">
+                    <div class="trending-product__title">
+                        <span class="trending-product__title-text">Sản Phẩm</span>
+                        <span class="trending-product__title-text">Tổng Hợp</span>
+                    </div>
+                    <div class="trending-product__list-wrap">
+                        <ul class="trending-product__list">
+                            <li class="trending-product__list-item trending-product__list-item--active">Tất Cả</li>
+                            <li class="trending-product__list-item">Khoa Học</li>
+                            <li class="trending-product__list-item">Kinh Doanh</li>
+                            <li class="trending-product__list-item">Văn Học</li>
+                            <li class="trending-product__list-item">
+                                <a href="./category.html" class="trending-product__list-item-link">Xem Thêm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-main-wrap">
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/dacnhantam.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">50.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Đắc Nhân Tâm</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Dale Carnegie</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/nghigiaulamgiau.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">60.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Think And Grow Rich</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Napoleon Hill</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/chagiauchangheo.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">65.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Rich Dad, Poor Dad</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Robert Kiyosaki</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/nhadaututhongminh.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">55.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Nhà Đầu Tư Thông Minh</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Benjamin Graham</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/quangganhlodivavuisong.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">50.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Quẳng Gánh Lo Đi & Vui Sống</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Dale Carnegie</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/book_item/diquahoacuc.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">60.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Đi Qua Hoa Cúc</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Nguyễn Nhật Ánh</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/book_item/matbiec.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">50.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Mắt Biếc</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Nguyễn Nhật Ánh</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/book_item/demenphieuluuky.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">70.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Dế Mèn Phiêu Lưu Ký</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Tô Hoài</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/book_item/lichsuvanvat.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">50.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Lịch Sử Vạn Vật</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Bill Bryson</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/book_item/chotoixin1vedituoitho.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">60.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Cho Tôi Xin Một Vé Đi Tuổi Thơ</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Nguyễn Nhật Ánh</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product-main__add-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book-of-year">
+            <div class="container1">
+                <div class="bok-wrap">
+                    <div class="bok-left">
+                        <div class="bok__img--wrap">
+                            <img src="./img/dacnhantam.jpg" alt="" class="bok__img-img">
+                        </div>
+                        <div class="bok-favourite hide-boy">
+                            <div class="bok-favourite-wrap">
+                                <div class="bok-favourite-title">
+                                    <span class="bok-favourite-title-text">CUỐN SÁCH CỦA NĂM 2021</span>
+                                </div>
+                                <div class="bok-favourite-rate">
+                                    <div class="bok-favourite__people-rate">
+                                        <div class="bok-favourite__people-rate-inner">Sách Được Mua Nhiều Nhất:</div>
+                                        <div class="bok-favourite__people-rate-text">
+                                            <span class="bok-favourite__people-rate-text-text">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                2500
+                                                <span class="bok-favourite__people-rate-text-text-inner">Lượt mua</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bok-favourite__people-rate">
+                                        <div class="bok-favourite__people-rate-inner"">Sách Được Yêu Thích Nhất:</div>
+                                        <div class="bok-favourite__people-rate-text">
+                                            <span class="bok-favourite__people-rate-text-text">
+                                                <i class="fas fa-heart"></i>
+                                                1000
+                                                <span class="bok-favourite__people-rate-text-text-inner">Lượt thích</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bok-favourite__people-rate">
+                                        <div class="bok-favourite__people-rate-inner"">Sách Được Đánh Giá Cao Nhất:</div>
+                                        <div class="bok-favourite__people-rate-text">
+                                            <span class="bok-favourite__people-rate-text-text">4,8
+                                                <span class="bok-favourite__people-rate-text-text-inner-icon"><i class="fas fa-star"></i></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bok-right">
+                        <div class="bok__right-top-wrap">
+                            <div class="bok__name-book-wrap">
+                                <span class="bok__name-book-text">
+                                    Đắc Nhân Tâm (How to Win Friends and Influence People).
+                                </span>
+                            </div>
+                            <div class="bok__author-category-wrap">
+                                <div class="bok__author-category-name">
+                                    <span class="bok__author-category-name-text">Tác Giả:</span>
+                                    <span class="bok__author-category-name-text2">Dale Carnegie</span>
+                                </div>
+                                <div class="bok__author-category-category">
+                                    <span class="bok__author-category-category-text">Thể Loại:</span>
+                                    <span class="bok__author-category-category-text2">Khoa Học Tâm Lý</span>
+                                </div>
+                            </div>
+                            <div class="bok__description-wrap">
+                                <span class="bok__description-text">Đắc nhân tâm (được lòng người), tên tiếng Anh là How to Win Friends and Influence People là một quyển sách nhằm tự giúp bản thân (self-help) bán chạy nhất từ trước đến nay. Quyển sách này do Dale Carnegie viết và đã được xuất bản lần đầu vào năm 1936, nó đã được bán 15 triệu bản trên khắp thế giới. Nó cũng là quyển sách bán chạy nhất của New York Times trong 10 năm. Tác phẩm được đánh giá là cuốn sách đầu tiên và hay nhất trong thể loại này, có ảnh hưởng thay đổi cuộc đời đối với hàng triệu người trên thế giới.</span>
+                            </div>
+                            <div class="bok__cost-wrap">
+                                <div class="bok__cost-main">
+                                    <span class="bok__cost-main-text">65.000đ</span>
+                                </div>
+                                <div class="bok__cost-discount">
+                                    <span class="bok__cost-discount-text">50.000đ</span>
+                                </div>
+                                <div class="bok__cost-percent">
+                                    <span class="bok__cost-percent-text">23%</span>
+                                </div>
+                            </div>
+                            <div class="detail-product__right-infor-share">
+                                <div class="detail-product__right-infor-share-text">Chia sẻ: </div>
+                                <ul class="detail-product__right-infor-share-list">
+                                    <li class="detail-product__right-infor-share-list-item">
+                                        <i class="fab fa-facebook"></i>
+                                    </li>
+                                    <li class="detail-product__right-infor-share-list-item">
+                                        <i class="fab fa-instagram"></i>
+                                    </li>
+                                    <li class="detail-product__right-infor-share-list-item">
+                                        <i class="fab fa-youtube-square"></i>
+                                    </li>
+                                    <li class="detail-product__right-infor-share-list-item">
+                                        <i class="fab fa-twitter-square"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bok__right-bottom-wrap">
+                            <div class="bok__right-bottom-button">
+                                <a href="./detail_product.html" class="bok__right-bottom-btn">
+                                    MUA NGAY
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bok-favourite hide-on-tablet">
+                        <div class="bok-favourite-wrap">
+                            <div class="bok-favourite-title">
+                                <span class="bok-favourite-title-text">CUỐN SÁCH CỦA NĂM 2021</span>
+                            </div>
+                            <div class="bok-favourite-rate">
+                                <div class="bok-favourite__people-rate">
+                                    <div class="bok-favourite__people-rate-inner">Sách Được Mua Nhiều Nhất:</div>
+                                    <div class="bok-favourite__people-rate-text">
+                                        <span class="bok-favourite__people-rate-text-text">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            2500
+                                            <span class="bok-favourite__people-rate-text-text-inner">Lượt mua</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="bok-favourite__people-rate">
+                                    <div class="bok-favourite__people-rate-inner"">Sách Được Yêu Thích Nhất:</div>
+                                    <div class="bok-favourite__people-rate-text">
+                                        <span class="bok-favourite__people-rate-text-text">
+                                            <i class="fas fa-heart"></i>
+                                            1000
+                                            <span class="bok-favourite__people-rate-text-text-inner">Lượt thích</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="bok-favourite__people-rate">
+                                    <div class="bok-favourite__people-rate-inner"">Sách Được Đánh Giá Cao Nhất:</div>
+                                    <div class="bok-favourite__people-rate-text">
+                                        <span class="bok-favourite__people-rate-text-text">4,8
+                                            <span class="bok-favourite__people-rate-text-text-inner-icon"><i class="fas fa-star"></i></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            <div class="container1">
+                <div class="author-title">
+                    <div class="author-title-text">
+                        <span>TÁC GIẢ NỔI BẬT</span>
+                    </div>
+                    <div class="author-title-description">
+                        <p>Những tác giả nổi tiếng ở Việt Nam và trên thế giới</p>
+                    </div>
+                </div>
+                <div class="author-wrap">
+                    <div class="author-colum">
+                        <div class="author__infor-wrap">
+                            <div class="author__avatar">
+                                <img src="./img/tacgia_noibat/dalecarnegie.jpg" alt="" class="author__avatar-img">
+                            </div>
+                            <!-- <div class="author__avatar-temp"></div> -->
+                            <div class="author__name">
+                                <span class="author__name-text">Dale Carnegie</span>
+                            </div>
+                            <div class="author__author-name">
+                                <span class="author__author-name-text">
+                                    Tác giả: 
+                                    <span class="author__author-name-description-text">Dale Carnegie (1888 – 1955), là một nhà văn và nhà thuyết trình Mỹ và là người phát triển các lớp tự giáo dục, nghệ thuật bán hàng, huấn luyện đoàn thể, nói trước công chúng và các kỹ năng giao tiếp giữa mọi người.</span>
+                                </span>
+                            </div>
+                            <div class="author__works">
+                                <span class="author__works-text">
+                                    Công việc chính:
+                                    <span class="author__works-text-description">Nhà văn, diễn giả</span>
+                                </span>
+                            </div>
+                            <div class="author__famous-highlight">
+                                <span class="author__famous-highlight-text">
+                                    Tác phẩm nổi bật: 
+                                    <span class="author__famous-highlight-text-description">Đắc Nhân Tâm (How to Win Friends and Influence People), Quẳng Gánh Lo Đi và Vui Sống</span>
+                                </span>
+                            </div>
+                            <div class="author__description">
+                                <span class="author__description-text">
+                                    Tiểu sử: 
+                                    <span class="author__description-text-description">
+                                        Năm 1911, Carnegie bỏ nghề bán hàng để theo đuổi giấc mơ từ lâu là trở thành một nhà thuyết trình Chautauqua. Nhưng cuối cùng ông lại theo học Học viện Nghệ thuật Kịch Mỹ tại New York, nhưng hầu như không có thành công với tư cách một diễn viên, dù có tài liệu ghi lại ông đã đảm nhiệm vai Dr. Hartley trong một chuyến biểu diễn lưu động của Gánh xiếc Polly. Khi công việc chấm dứt, ông quay trở về New York, thất nghiệp, gần phá sản, và sống tại YMCA ở Phố 125. Chính tại đây ông nảy sinh ý tưởng giảng dạy môn nói trước công chúng, và ông đã theo đuổi một vị quản lý "Y" nhằm cho phép ông mở một lớp học và trao cho họ 80% lợi nhuận. Trong khóa học đầu tiên, ông hầu như không có tài liệu để dạy: ứng tác, ông đề nghị các sinh viên nói về "điều đã khiến họ nổi giận", và phát hiện ra rằng kỹ thuật này khiến diễn giả không cảm thấy sợ khi nói trước đám đông.[3] Từ khởi đầu năm 1912 này, các khóa học của Dale Carnegie bắt đầu phát triển. Carnegie đưa được vào trong mỗi người Mỹ một tham vọng phát triển tự tin hơn, và tới năm 1914, ông đã kiếm được $500 - con số tương đương $10.000 ngày nay - mỗi tuần.
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="author__btn-read">
+                                <button class="author__btn-read-btn">ĐỌC THÊM</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="author-colum">
+                        <div class="author__infor-wrap">
+                            <div class="author__avatar">
+                                <img src="./img/tacgia_noibat/nguyennhatanh.jpg" alt="" class="author__avatar-img">
+                            </div>
+                            <!-- <div class="author__avatar-temp"></div> -->
+                            <div class="author__name">
+                                <span class="author__name-text">Nguyễn Nhật Ánh</span>
+                            </div>
+                            <div class="author__author-name">
+                                <span class="author__author-name-text">
+                                    Tác giả: 
+                                    <span class="author__author-name-description-text">Nguyễn Nhật Ánh (1955), là một nhà văn người Việt. Ông được biết đến qua nhiều tác phẩm văn học về đề tài tuổi mới lớn, các tác phẩm của ông rất được độc giả ưa chuộng và nhiều tác phẩm đã được chuyển thể thành phim.</span>
+                                </span>
+                            </div>
+                            <div class="author__works">
+                                <span class="author__works-text">
+                                    Công việc chính:
+                                    <span class="author__works-text-description">Nhà văn</span>
+                                </span>
+                            </div>
+                            <div class="author__famous-highlight">
+                                <span class="author__famous-highlight-text">
+                                    Tác phẩm nổi bật: 
+                                    <span class="author__famous-highlight-text-description">Mắt Biếc, Tôi Thấy Hoa Vàng Trên Cỏ Xanh, Đi Qua Hoa Cúc...</span>
+                                </span>
+                            </div>
+                            <div class="author__description">
+                                <span class="author__description-text">
+                                    Tiểu sử: 
+                                    <span class="author__description-text-description">
+                                        Năm 1911, Carnegie bỏ nghề bán hàng để theo đuổi giấc mơ từ lâu là trở thành một nhà thuyết trình Chautauqua. Nhưng cuối cùng ông lại theo học Học viện Nghệ thuật Kịch Mỹ tại New York, nhưng hầu như không có thành công với tư cách một diễn viên, dù có tài liệu ghi lại ông đã đảm nhiệm vai Dr. Hartley trong một chuyến biểu diễn lưu động của Gánh xiếc Polly. Khi công việc chấm dứt, ông quay trở về New York, thất nghiệp, gần phá sản, và sống tại YMCA ở Phố 125. Chính tại đây ông nảy sinh ý tưởng giảng dạy môn nói trước công chúng, và ông đã theo đuổi một vị quản lý "Y" nhằm cho phép ông mở một lớp học và trao cho họ 80% lợi nhuận. Trong khóa học đầu tiên, ông hầu như không có tài liệu để dạy: ứng tác, ông đề nghị các sinh viên nói về "điều đã khiến họ nổi giận", và phát hiện ra rằng kỹ thuật này khiến diễn giả không cảm thấy sợ khi nói trước đám đông.[3] Từ khởi đầu năm 1912 này, các khóa học của Dale Carnegie bắt đầu phát triển. Carnegie đưa được vào trong mỗi người Mỹ một tham vọng phát triển tự tin hơn, và tới năm 1914, ông đã kiếm được $500 - con số tương đương $10.000 ngày nay - mỗi tuần.
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="author__btn-read">
+                                <button class="author__btn-read-btn">ĐỌC THÊM</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="author-colum">
+                        <div class="author__infor-wrap">
+                            <div class="author__avatar">
+                                <img src="./img/tacgia_noibat/tohoai.jpg" alt="" class="author__avatar-img">
+                            </div>
+                            <!-- <div class="author__avatar-temp"></div> -->
+                            <div class="author__name">
+                                <span class="author__name-text">Tô Hoài</span>
+                            </div>
+                            <div class="author__author-name">
+                                <span class="author__author-name-text">
+                                    Tác giả: 
+                                    <span class="author__author-name-description-text">Tô Hoài (1920 - 2014), là một nhà văn Việt Nam. Một số tác phẩm đề tài thiếu nhi của ông được dịch ra ngoại ngữ. Ông được nhà nước Việt Nam trao tặng Giải thưởng Hồ Chí Minh về Văn học – Nghệ thuật Đợt 1 (1996)...</span>
+                                </span>
+                            </div>
+                            <div class="author__works">
+                                <span class="author__works-text">
+                                    Công việc chính:
+                                    <span class="author__works-text-description">Nhà văn, nhà báo</span>
+                                </span>
+                            </div>
+                            <div class="author__famous-highlight">
+                                <span class="author__famous-highlight-text">
+                                    Tác phẩm nổi bật: 
+                                    <span class="author__famous-highlight-text-description">Dế Mèn Phiêu Lưu Ký (1941), Vợ Chồng A Phủ...</span>
+                                </span>
+                            </div>
+                            <div class="author__description">
+                                <span class="author__description-text">
+                                    Tiểu sử: 
+                                    <span class="author__description-text-description">
+                                        Tô Hoài sinh ra tại quê nội ở thôn Cát Động, Thị trấn Kim Bài, huyện Thanh Oai, tỉnh Hà Đông cũ trong một gia đình thợ thủ công. Tuy nhiên, ông lớn lên ở quê ngoại là làng Nghĩa Đô, huyện Từ Liêm, phủ Hoài Đức, tỉnh Hà Đông (nay thuộc phường Nghĩa Đô, quận Cầu Giấy, Hà Nội, Việt Nam[2]). Bút danh Tô Hoài gắn với hai địa danh: sông Tô Lịch và phủ Hoài Đức.
+                                        Bước vào tuổi thanh niên, ông đã phải làm nhiều công việc để kiếm sống như dạy trẻ, bán hàng, kế toán hiệu buôn,... nhưng có những lúc thất nghiệp. Khi đến với văn chương, ông nhanh chóng được người đọc chú ý, nhất là qua truyện Dế Mèn phiêu lưu ký. Năm 1943, Tô Hoài gia nhập Hội Văn hóa cứu quốc. Trong chiến tranh Đông Dương, ông chủ yếu hoạt động trong lĩnh vực báo chí, nhưng vẫn có một số thành tựu quan trọng như Truyện Tây Bắc.
+                                        Từ năm 1954 trở đi, ông có điều kiện tập trung vào sáng tác. Tính đến nay, sau hơn sáu mươi năm lao động nghệ thuật, ông đã có hơn 100 tác phẩm thuộc nhiều thể loại khác nhau: truyện ngắn, truyện dài kỳ, hồi ký, kịch bản phim, tiểu luận và kinh nghiệm sáng tác.
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="author__btn-read">
+                                <button class="author__btn-read-btn">ĐỌC THÊM</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="container1">
+                <div class="service-wrap">
+                    <div class="service-column">
+                        <div class="service__infor-wrap">
+                            <div class="service__infor-logo-wrap">
+                                <img src="./img/service_icon/truck.png" alt="" class="service__infor-logo-img">
+                            </div>
+                            <div class="service__description-wrap">
+                                <div class="service__description-title-wrap">
+                                    <span class="service__description-title-text">Miễn Phí Vận Chuyển</span>
+                                </div>
+                                <div class="service__description-description-wrap">
+                                    <span class="service__description-description-text">Tổng giá đơn hàng từ 499k</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="service-column">
+                        <div class="service__infor-wrap">
+                            <div class="service__infor-logo-wrap">
+                                <img src="./img/service_icon/book.png" alt="" class="service__infor-logo-book-img">
+                            </div>
+                            <div class="service__description-wrap">
+                                <div class="service__description-title-wrap">
+                                    <span class="service__description-title-text">14 Ngày Hoàn Trả</span>
+                                </div>
+                                <div class="service__description-description-wrap">
+                                    <span class="service__description-description-text">Hỗ trợ hoàn trả sản phẩm</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="service-column">
+                        <div class="service__infor-wrap">
+                            <div class="service__infor-logo-wrap">
+                                <img src="./img/service_icon/payment.png" alt="" class="service__infor-logo-payment-img">
+                            </div>
+                            <div class="service__description-wrap">
+                                <div class="service__description-title-wrap">
+                                    <span class="service__description-title-text">Thanh Toán An Toàn</span>
+                                </div>
+                                <div class="service__description-description-wrap">
+                                    <span class="service__description-description-text">100% an toàn & bảo mật</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="service-column">
+                        <div class="service__infor-wrap">
+                            <div class="service__infor-logo-wrap">
+                                <img src="./img/service_icon/support.png" alt="" class="service__infor-logo-support-img">
+                            </div>
+                            <div class="service__description-wrap">
+                                <div class="service__description-title-wrap">
+                                    <span class="service__description-title-text">Hỗ Trợ 24/7</span>
+                                </div>
+                                <div class="service__description-description-wrap">
+                                    <span class="service__description-description-text">Hỗ trợ thân thiện</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container1">
+                <div class="footer-wrap">
+                    <div class="footer-colum">
+                        <div class="footer-colum__logo">
+                            <a href="#" class="footer-logo">
+                                <img src="./img/logo.png" alt="" class="footer-logo-img">
+                                <span class="footer-logo__text">HE Books</span>
+                            </a>
+                        </div>
+                        <div class="footer__links">
+                            <div class="footer__links-title">
+                                <span class="footer__link-title-text">Kết Nối:</span>
+                                <div class="footer__links-list-wrap">
+                                <ul class="footer__links-list">
+                                    <li class="footer__link-list-item">
+                                        <a href="#" class="footer__link-list-item--link">
+                                            <span class="footer__link-list-item-icon">
+                                                <i class="fab fa-facebook"></i>
+                                            </span>
+                                        </a>
+                                        </li>
+                                    <li class="footer__link-list-item">
+                                        <a href="#" class="footer__link-list-item--link">
+                                            <span class="footer__link-list-item-icon">
+                                                <i class="fab fa-instagram"></i>
+                                            </span>
+                                        </a>
+                                        </li>
+                                    <li class="footer__link-list-item">
+                                        <a href="#" class="footer__link-list-item--link">
+                                            <span class="footer__link-list-item-icon">
+                                                <i class="fab fa-youtube-square"></i>
+                                            </span>
+                                        </a>
+                                        </li>
+                                    <li class="footer__link-list-item">
+                                        <a href="#" class="footer__link-list-item--link">
+                                            <span class="footer__link-list-item-icon">
+                                                <i class="fab fa-twitter-square"></i>
+                                            </span>
+                                        </a>
+                                        </li>
+                                </ul>
+                            </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-colum">
+                        <div class="footer-colum__title">
+                            <span class="footer-colum__title-text">VỀ TRANG WEB</span>
+                        </div>
+                        <ul class="footer-colum__list">
+                           
+                            <li class="footer-colum__item">Liên Hệ</li>
+                            <li class="footer-colum__item">Giới Thiệu</li>
+                            <li class="footer-colum__item">Điều Khoản & Chính Sách</li>
+                        </ul>
+                    </div>
+                    <div class="footer-colum">
+                        <div class="footer-colum__title">
+                            <span class="footer-colum__title-text">TRỢ GIÚP</span>
+                        </div>
+                        <ul class="footer-colum__list">
+                            <li class="footer-colum__item">Câu Hỏi Thường Gặp</li>
+                            <li class="footer-colum__item">Hướng Dẫn Mua Hàng</li>
+                            <li class="footer-colum__item">Phương Thức Thanh Toán</li>
+                        </ul>
+                    </div>
+                    <div class="footer-colum">
+                        <div class="footer-colum__title">
+                            <span class="footer-colum__title-icon">
+                                <i class="far fa-envelope"></i>
+                            </span>
+                            <span class="footer-colum__title-text">ĐĂNG KÝ THÔNG BÁO</span>
+                        </div>
+                        <div class="footer__input-btn-wrap">
+                            <input placeholder="Email của bạn..." class="footer-colum__item-input" type="text">
+                            <button class="footer-colum__button">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="./main.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./slick/slick-1.8.1/slick/slick.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous"></script> -->
+    <script src="./slick.js"></script>
+    		
+</body>
+</html>

@@ -1,0 +1,137 @@
+:root {
+    --default-text-font-size: 15px;
+    --base-text-font-size: 15px;
+    --heading-font-family: "ITC Avant Garde Gothic", sans-serif;
+    --heading-font-weight: 500;
+    --heading-font-style: normal;
+    --text-font-family: "Basic Commercial", sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --text-font-bolder-weight: bolder;
+    --text-link-decoration: underline;
+    --text-color: #3a2a2f;
+    --text-color-rgb: 58, 42, 47;
+    --heading-color: #922b28;
+    --border-color: #e7e2de;
+    --border-color-rgb: 231, 226, 222;
+    --form-border-color: #dcd5cf;
+    --accent-color: #922b28;
+    --accent-color-rgb: 146, 43, 40;
+    --link-color: #183359;
+    --link-color-hover: #08101d;
+    --background: #f7f4f2;
+    --secondary-background: #ffffff;
+    --secondary-background-rgb: 255, 255, 255;
+    --accent-background: rgba(146, 43, 40, 0.08);
+    --error-color: #f71b1b;
+    --error-background: rgba(247, 27, 27, 0.07);
+    --success-color: #48b448;
+    --success-background: rgba(72, 180, 72, 0.11);
+    --primary-button-background: #922b28;
+    --primary-button-background-rgb: 146, 43, 40;
+    --primary-button-text-color: #ffffff;
+    --secondary-button-background: #183359;
+    --secondary-button-background-rgb: 24, 51, 89;
+    --secondary-button-text-color: #ffffff;
+    --header-background: #221f20;
+    --header-text-color: #ffffff;
+    --header-light-text-color: #e9e2dd;
+    --header-border-color: rgba(233, 226, 221, 0.3);
+    --header-accent-color: #922b28;
+    --flickity-arrow-color: #bcaea3;
+    --product-on-sale-accent: #c60505;
+    --product-on-sale-accent-rgb: 198, 5, 5;
+    --product-on-sale-color: #ffffff;
+    --product-in-stock-color: #008a00;
+    --product-low-stock-color: #1f3459;
+    --product-sold-out-color: #d1d1d4;
+    --product-custom-label-1-background: #496ea4;
+    --product-custom-label-1-color: #ffffff;
+    --product-custom-label-2-background: #d1c7c1;
+    --product-custom-label-2-color: #000000;
+    --product-review-star-color: #ffb647;
+    --mobile-container-gutter: 20px;
+    --desktop-container-gutter: 40px;
+}
+
+html {
+    font-family: var(--text-font-family);
+    font-weight: var(--text-font-weight);
+    font-style: var(--text-font-style);
+    font-size: calc(var(--base-text-font-size) - 1px);
+    line-height: 1.87;
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+a {
+    display: block;
+    text-decoration: none !important;
+}
+
+ul, ol {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Basic Commercial", sans-serif;
+    src: url(../font/BasicCommercial_LT_Light.ttf);
+}
+
+input {
+    line-height: normal;
+    -moz-appearance: none;
+    border-radius: 0;
+    outline: none;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button, input[type=submit] {
+    padding: 0;
+    overflow: visible;
+    background: none;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+button {
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.7;
+        transform: scale(0.6);
+    }
+    t0 {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

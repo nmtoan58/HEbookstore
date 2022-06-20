@@ -1,0 +1,93 @@
+:root {
+    --main-color:#fff;
+    --border-color: #dcd5cf;
+    --border-color2: #e7e2de;
+    --primary-color: #ff4157;
+    --text-color: rgb(0, 0, 0);
+    --white-color: #fff;
+    --primary-btn-color: rgb(246, 177, 73);
+    --rate-heart-color: rgb(190, 189, 189);
+    --rate-heart-color--active: #ff5858;
+    --boder-color-input: #dcd5cf;
+    --black-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    -o-user-select: none;
+    user-select: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    outline: none !important;
+
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    width: 150px;
+    height: 50px;
+    color: var(--white-color);
+    border-radius: 2px;
+    line-height: 0;
+}
+
+input {
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeScale {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+

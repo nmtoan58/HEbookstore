@@ -1,0 +1,39 @@
+#sp01 {
+    padding-top: 100%;
+    background-image: url('../img/dacnhantam.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#sp02 {
+    padding-top: 100%;
+    background-image: url('../img/chagiauchangheo.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#sp03 {
+    padding-top: 100%;
+    background-image: url('../img/nghigiaulamgiau.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#sp04 {
+    padding-top: 100%;
+    background-image: url('../img/nhadaututhongminh.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#sp05 {
+    padding-top: 100%;
+    background-image: url('../img/quangganhlodivavuisong.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HE Detail Product</title>
+    <link rel="stylesheet" href="./css/detail_main.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/detail_responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.1-web/css/all.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header-web">
+            <div class="container1">
+                <div class="header__nav-bar">
+                    <div class="wrap-nav-mobile">
+                        <div class="nav-mobile hide-list-nav">
+                            <input class="nav-mobile-checkbox" hidden type="checkbox" name="" id="nav-mobile-check">
+                            <label class="nav-mobile-label" for="nav-mobile-check"><i class="fas fa-bars"></i></label>
+                            <label for="nav-mobile-check" class="nav-overlay"></label>
+                            <div class="nav-mobile-list">
+                                <label for="nav-mobile-check" class="nav-time"><i class="far fa-times-circle"></i></label>
+                                <ul class="nav-mobile-list-list">
+                                    <li class="nav-mobie-list-item">
+                                        <a href="./index.html" class="nav-mobile-list-item-link">Trang Chủ</a>
+                                    </li>
+                                    <li class="nav-mobie-list-item">
+                                        <a href="./category.html" class="nav-mobile-list-item-link">Thể Loại</a>
+                                    </li>
+                                    <li class="nav-mobie-list-item">
+                                        <a href="#" class="nav-mobile-list-item-link">Blog</a>
+                                    </li>
+                                    <li class="nav-mobie-list-item">
+                                        <a href="#" class="nav-mobile-list-item-link">Khác</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-mobile-search">
+                            <input hidden type="checkbox" name="" class="mobile-search-checkbox" id="mobile-search-check">
+                            <label class="mobile-search-icon" for="mobile-search-check"><i class="fas fa-search"></i></label>
+                            <div class="mobile-search-input">
+                                <input class="mobile-search-input-input" placeholder="Tìm Kiếm..." type="text">
+                                <span class="mobile-search-input-icon"><i class="fas fa-search"></i></span>
+                            </div>
+                        </div>
+                       </div>
+                        <div class="header__nav-bar-bar">
+                            <a href="./index.html" class="header__nav-bar-logo">
+                                <img src="./img/logo.png" alt="" class="header__nav-bar-logo-img">
+                                <span class="header__navbar-logo-text">HE Books</span>
+                            </a>
+                            <ul class="header__nav-bar-list">
+                                <li class="header__nav-bar-items">
+                                    <a href="./index.html" class="header__nav-bar-items-link">Trang Chủ</a>
+                                </li>
+                                <li class="header__nav-bar-items header__nav-bar-items-layout">
+                                    <a href="./category.html" class="header__nav-bar-items-link">Thể Loại</a>
+                                    <div class="header__nav-bar-items-form">
+                                        <ul class="header__nav-bar-items-form-list">
+                                            <li class="header__nav-bar-items-form-list-item">
+                                                <a href="./category.html" class="header__nav-bar-items-form-list-item-link">Sách Bán Chạy</a>
+                                            </li>
+                                            <li class="header__nav-bar-items-form-list-item">
+                                                <a href="./category.html" class="header__nav-bar-items-form-list-item-link">Sách Phổ Biến</a>
+                                            </li>
+                                            <li class="header__nav-bar-items-form-list-item">
+                                                <a href="./category.html" class="header__nav-bar-items-form-list-item-link">Sách Đang Giảm Giá</a>
+                                            </li>
+                                            <li class="header__nav-bar-items-form-list-item">
+                                                <a href="./category.html" class="header__nav-bar-items-form-list-item-link">Tất Cả Thể Loại</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__nav-bar-items">Blog</li>
+                            </ul>
+                        </div>
+                        <div class="header__nav-bar-search">
+                            <div class="header__nav-bar-user">
+                                <div class="header__nav-user-icon">
+                                    <input type="checkbox" name="" hidden class="account-checkbox" id="account-check">
+                                    <label class="hide-user" for="account-check"><span class="header__nav-user-icon"><i class="fas fa-user"></i></span></label>
+                                    <label class="label-account-check header__nav-bar-user-text hide-on-tablet" for="account-check">
+                                        <span class="header__nav-user-icon"><i class="fas fa-user"></i></span>
+                                        Tài Khoản
+                                    </label>                   
+                                    <div class="header__nav-bar-user-form">
+                                        <div id="login-form" class="header__nav-bar-user-form-wrap">
+                                            <div class="header__nav-bar-user-form-title">
+                                                <span class="header__nav-bar-user-form-title-text">Đăng Nhập</span>
+                                            </div>
+                                            <div class="header__nav-bar-user-form-input-wrap">
+                                                <div class="header__nav-bar-user-form-input">
+                                                    <input class="header__nav-bar-user-form-input-ip" placeholder="Tài Khoản" type="text">
+                                                </div>
+                                                <div class="header__nav-bar-user-form-input">
+                                                    <input id="password" class="header__nav-bar-user-form-input-ip" placeholder="Mật Khẩu" type="password">
+                                                    <span onclick="showPass()" class="header__nav-bar-user-form-input-pass-icon"><i id="icon-pass" class="fas fa-eye"></i></span>
+                                                </div>                                            
+                                            </div>
+                                            <div class="header__nav-bar-user-form-btn">
+                                                <button class="header__nav-bar-user-form-btn-btn">ĐĂNG NHẬP</button>
+                                            </div>
+                                            <div class="header__nav-bar-user-form-register-forgot">
+                                                <div class="header__nav-bar-user-form-register">Bạn chưa có tài khoản?
+                                                    <span id="btn-register-extra" onclick="btn_Move_register()" class="header__nav-bar-user-form-register-text">Đăng Ký</span>
+                                                </div>
+                                                <div class="header__nav-bar-user-forgot-wrap">
+                                                    <a href="#" class="header__nav-bar-user-form-forgot">
+                                                        Quên mật khẩu
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="register-form" class="header__nav-bar-user-regiter-form">
+                                            <div class="header__nav-bar-user-form-title">
+                                                <span class="header__nav-bar-user-form-title-text">Đăng Ký</span>
+                                            </div>
+                                            <div class="header__nav-bar-user-form-input-wrap">
+                                                <div class="header__nav-bar-user-form-input">
+                                                    <input class="header__nav-bar-user-form-input-ip" placeholder="Email / Số điện thoại" type="text">
+                                                </div>
+                                                <div class="header__nav-bar-user-form-input">
+                                                    <input class="header__nav-bar-user-form-input-ip" placeholder="Tài Khoản" type="text">
+                                                </div>
+                                                <div class="header__nav-bar-user-form-input">
+                                                    <input id="password2" class="header__nav-bar-user-form-input-ip" placeholder="Mật Khẩu" type="password">
+                                                    <span onclick="showPass2()" class="header__nav-bar-user-form-input-pass-icon"><i id="icon-pass2" class="fas fa-eye"></i></span>
+                                                </div>
+                                                <div class="header__nav-bar-user-form-input">
+                                                    <input id="password3" class="header__nav-bar-user-form-input-ip" placeholder="Nhập lại mật khẩu" type="password">
+                                                    <span onclick="showPass3()" class="header__nav-bar-user-form-input-pass-icon"><i id="icon-pass3" class="fas fa-eye"></i></span>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="header__nav-bar-user-form-btn">
+                                                <button class="header__nav-bar-user-form-btn-btn">ĐĂNG KÝ</button>
+                                            </div>
+                                            <div class="header__nav-bar-user-form-register-forgot">
+                                                <div class="header__nav-bar-user-form-register">Bạn đã có tài khoản?
+                                                    <span onclick="btn_Move_login()" class="header__nav-bar-user-form-register-text">Đăng nhập</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                </div>                            
+                            </div>                     
+                            <div class="header__nav-bar-search-wrap hide-on-mobile">
+                                <input class="header__nav-bar-search-input" placeholder="Tìm kiếm..." type="text">
+                                <span class="header__nav-bar-search-icon"><i class="fas fa-search"></i></span>
+                            </div>
+                            <div class="header__nav-bar-cart">
+                                <input hidden type="checkbox" class="cart-checkbox" name="" id="cart-check">
+                                <label class="hide-cart" for="cart-check"><span class="header__nav-cart-icon"><i class="fas fa-shopping-cart"></i></span></label>
+                                <label class="label-cart-check hide-on-tablet" for="cart-check">
+                                    <span class="header__nav-cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                    Giỏ Hàng
+                                </label>
+                                <div class="header__nav-cart-layer">
+                                    <div class="header__nav-cart-layer-empty">
+                                        <div class="header__nav-cart-layer-empty-img">
+                                            <img src="./img/cart_empty/empty-cart.png" alt="" class="header__nav-cart-layer-empty-img-img">
+                                        </div>
+                                        <div class="header__nav-cart-layer-empty-btn">
+                                            <a href="./category.html" class="header__nav-cart-layer-empty-link">MUA HÀNG NGAY</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail-product">
+            <div class="container1">
+                <div class="detail-product__path">
+                    <div class="detail-product__path-home">
+                        <a href="./index.html" class="detail-product__path-home-link">Trang Chủ</a>
+                    </div>
+                    <span class="detail-product__path-icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                    <div class="detail-product__path-now">
+                        <a href="./category.html" class="detail-product__path-home-link">Thể Loại</a>
+                    </div>
+                    <span class="detail-product__path-icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                    <div class="detail-product__path-now">
+                        <a href="./detail_product.html" class="detail-product__path-home-link detail-product__path-home-link--active">Chi Tiết</a>
+                    </div>
+                </div>
+                <div class="wrap-detail-product">
+                    <div class="detail-product__left">
+                        <div class="detail-product__left-wrap">
+                            <div class="detail-product__left-img-mini">
+                                <div class="detail-product__left-img-mini-wrap detail-product__left-img-mini-wrap--active">
+                                    <img onclick="changImg('anh1')" id="anh1" src="./img/dacnhantam.jpg"  alt="" class="detail-product__left-img-mini-wrap-img">
+                                </div>
+                                <div class="detail-product__left-img-mini-wrap">
+                                    <img onclick="changImg('anh2')" id="anh2" src="./img/detail_img/dacnhantam1.jpg" alt="" class="detail-product__left-img-mini-wrap-img">
+                                </div>
+                                <div class="detail-product__left-img-mini-wrap">
+                                    <img onclick="changImg('anh3')" id="anh3" src="./img/detail_img/dacnhantam2.jpg" alt="" class="detail-product__left-img-mini-wrap-img">
+                                </div>
+                            </div>
+                            <div id="img-main" class="detail-product__left-img-view">
+                                <img id="anh-main" src="./img/dacnhantam.jpg" alt="" class="detail-product__left-img-view-img">
+                            </div>
+                        </div>
+                        <div class="detail-product__mobile-wrap">
+                            <div class="detail-product__right-wrap">
+                                <div class="detail-product__right-title">
+                                    <span class="detail-product__right-title-text">Đắc Nhân Tâm (How to Win Friends and Influence People)</span>
+                                </div>
+                                <div class="detail-product__right-author">
+                                    <div class="detail-product__right-author-author">
+                                        <a href="./index.html" class="detail-product__right-author-author-name">Dale Carnegie</a>
+                                    </div>
+                                    <div class="detail-product__right-author-category">
+                                        <a href="./category.html" class="detail-product__right-author-category-text">Khoa Học Tâm Lý</a>
+                                    </div>
+                                    <div class="detail-product__right-author-like">
+                                        <div class="detail-product__right-author-like-icon">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="detail-product__right-author-like-text-count">1000
+                                                <span class="detail-product__right-author-like-text">Lượt Thích</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-product__right-infor-list">
+                                    <div class="detail-product__right-infor-inner">
+                                        <div class="detail-product__right-infor-cost">
+                                            <div class="detail-product__right-infor-cost-text">Giá:</div>
+                                            <span class="detail-product__right-infor-cost-count">50.000đ</span>
+                                        </div>
+                                        <div class="detail-product__right-infor-quantity">
+                                            <div class="detail-product__right-infor-quantity-text">Số lượng:</div>
+                                            <select class="detail-product__right-infor-quantity-select" name="" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10+">10+</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="detail-product__right-infor-wishlist">
+                                        <div class="detail-product__right-infor-wishlist-text">Yêu thích</div>
+                                        <span class="detail-product__right-infor-wishlist-icon">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                    <div class="detail-product__right-infor-share">
+                                        <div class="detail-product__right-infor-share-text">Chia sẻ: </div>
+                                        <ul class="detail-product__right-infor-share-list">
+                                            <li class="detail-product__right-infor-share-list-item">
+                                                <i class="fab fa-facebook"></i>
+                                            </li>
+                                            <li class="detail-product__right-infor-share-list-item">
+                                                <i class="fab fa-instagram"></i>
+                                            </li>
+                                            <li class="detail-product__right-infor-share-list-item">
+                                                <i class="fab fa-youtube-square"></i>
+                                            </li>
+                                            <li class="detail-product__right-infor-share-list-item">
+                                                <i class="fab fa-twitter-square"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div class="detail-product__right-btn">
+                                    <div class="detail-product__right-btn-wrap">
+                                        <button class="detail-product__right-btn-btn">THÊM VÀO GIỎ HÀNG</button>
+                                        <a href="./check_out.html" class="detail-product__right-btn-link">MUA NGAY</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-product__left-description-wrap">
+                            <div class="detail-product__left-description-title">
+                                <span class="detail-product__left-description-title-text">Giới Thiệu Cuốn Sách</span>
+                            </div>
+                            <div class="detail-product__left-description">
+                                <div class="detail-product__left-description-title-book">
+                                    <span class="detail-product__left-description-title-book-text">Đắc Nhân Tâm (How to Win Friends and Influence People)</span>
+                                </div>
+                                <div class="detail-product__left-description-book">
+                                    <p>Đắc nhân tâm (được lòng người), tên tiếng Anh là How to Win Friends and Influence People là một quyển sách nhằm tự giúp bản thân (self-help) bán chạy nhất từ trước đến nay. Quyển sách này do Dale Carnegie viết và đã được xuất bản lần đầu vào năm 1936, nó đã được bán 15 triệu bản trên khắp thế giới. Nó cũng là quyển sách bán chạy nhất của New York Times trong 10 năm. Tác phẩm được đánh giá là cuốn sách đầu tiên và hay nhất trong thể loại này, có ảnh hưởng thay đổi cuộc đời đối với hàng triệu người trên thế giới.</p>
+                                </div>
+                                <div class="detail-product__left-description-book-chapter">
+                                    <span class="detail-product__left-description-book-chapter-text">Danh Sách Chương</span>
+                                    <ul class="detail-product__left-description-book-chapter-list">
+                                        <li class="detail-product__left-description-book-chapter-list-item">
+                                            Phần I. Những thuật căn bản để dẫn đạo người
+                                        </li>
+                                        <li class="detail-product__left-description-book-chapter-list-item">
+                                            Phần II. Sáu cách tạo thiện cảm
+                                        </li>
+                                        <li class="detail-product__left-description-book-chapter-list-item">
+                                            Phần III. Mười hai cách hướng người khác suy nghĩ theo bạn
+                                        </li>
+                                        <li class="detail-product__left-description-book-chapter-list-item">
+                                            Phần IV. Chuyển hoá người khác mà không gây ra sự chống đối hay oán giận
+                                        </li>
+                                        <li class="detail-product__left-description-book-chapter-list-item">
+                                            Phần V. Những bức thư mầu nhiệm
+                                        </li>
+                                        <li class="detail-product__left-description-book-chapter-list-item">
+                                            Phần VI. Bảy lời khuyên để tăng hạnh phúc trong Gia đình
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="detail-product__left-description-book-detail">
+                                    <div class="detail-product__left-description-book-author">Tác giả:
+                                        <a href="./index.html">Dale Carnegie</a>
+                                    </div>
+                                    <div class="detail-product__left-description-book-category">Thể loại:
+                                        <a href="./category.html">Khoa Học Tâm Lý</a>
+                                    </div>
+                                    <div class="detail-product__left-description-book-made">Ngày xuất bản:
+                                        <span>3/2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-product__left-people-rate">
+                            <div class="detail-product__left-people-rate-title">
+                                <span>Người Dùng Đánh Giá</span>
+                            </div>
+                            <div class="detail-product__left-people-rate-container">
+                                <div class="detail-product__left-people-rate-container-rate">
+                                    <div class="detail-product__left-people-rate-container-rate-item">
+                                        <span class="detail-product__left-people-rate-container-rate-icon">5 <i class="fas fa-star"></i></span>
+                                        <div></div>
+                                        <span class="detail-product__left-people-rate-container-rate-count">0</span>
+                                    </div>
+                                    <div class="detail-product__left-people-rate-container-rate-item">
+                                        <span class="detail-product__left-people-rate-container-rate-icon">4 <i class="fas fa-star"></i></span>
+                                        <div></div>
+                                        <span class="detail-product__left-people-rate-container-rate-count">0</span>
+                                    </div>
+                                    <div class="detail-product__left-people-rate-container-rate-item">
+                                        <span class="detail-product__left-people-rate-container-rate-icon">3 <i class="fas fa-star"></i></span>
+                                        <div></div>
+                                        <span class="detail-product__left-people-rate-container-rate-count">0</span>
+                                    </div>
+                                    <div class="detail-product__left-people-rate-container-rate-item">
+                                        <span class="detail-product__left-people-rate-container-rate-icon">2 <i class="fas fa-star"></i></span>
+                                        <div></div>
+                                        <span class="detail-product__left-people-rate-container-rate-count">0</span>
+                                    </div>
+                                    <div class="detail-product__left-people-rate-container-rate-item">
+                                        <span class="detail-product__left-people-rate-container-rate-icon">1 <i class="fas fa-star"></i></span>
+                                        <div></div>
+                                        <span class="detail-product__left-people-rate-container-rate-count">0</span>
+                                    </div>
+                                </div>
+                                <div class="detail-product__left-people-rate-sum">
+                                    <div class="detail-product__left-people-rate-sum-title">
+                                        <span>Đánh giá trung bình</span>
+                                    </div>
+                                    <div class="detail-product__left-people-rate-sum-text-wrap">
+                                        <div class="detail-product__left-people-rate-sum-text">
+                                            (0
+                                            <span>- Lượt đánh giá)</span>
+                                        </div>
+                                        <div class="detail-product__left-people-rate-sum-count">
+                                            <span>0,0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-product__right">
+                        <div class="detail-product__right-wrap">
+                            <div class="detail-product__right-title">
+                                <span class="detail-product__right-title-text">Đắc Nhân Tâm (How to Win Friends and Influence People)</span>
+                            </div>
+                            <div class="detail-product__right-author">
+                                <div class="detail-product__right-author-author">
+                                    <a href="./index.html" class="detail-product__right-author-author-name">Dale Carnegie</a>
+                                </div>
+                                <div class="detail-product__right-author-category">
+                                    <a href="./category.html" class="detail-product__right-author-category-text">Khoa Học Tâm Lý</a>
+                                </div>
+                                <div class="detail-product__right-author-like">
+                                    <div class="detail-product__right-author-like-icon">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="detail-product__right-author-like-text-count">1000
+                                            <span class="detail-product__right-author-like-text">Lượt Thích</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-product__right-infor-list">
+                                <div class="detail-product__right-infor-inner">
+                                    <div class="detail-product__right-infor-cost">
+                                        <div class="detail-product__right-infor-cost-text">Giá:</div>
+                                        <span class="detail-product__right-infor-cost-count">50.000đ</span>
+                                    </div>
+                                    <div class="detail-product__right-infor-quantity">
+                                        <div class="detail-product__right-infor-quantity-text">Số lượng:</div>
+                                        <select class="detail-product__right-infor-quantity-select" name="" id="">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10+">10+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="detail-product__right-infor-wishlist">
+                                    <div class="detail-product__right-infor-wishlist-text">Yêu thích</div>
+                                    <span class="detail-product__right-infor-wishlist-icon">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                </div>
+                                <div class="detail-product__right-infor-share">
+                                    <div class="detail-product__right-infor-share-text">Chia sẻ: </div>
+                                    <ul class="detail-product__right-infor-share-list">
+                                        <li class="detail-product__right-infor-share-list-item">
+                                            <i class="fab fa-facebook"></i>
+                                        </li>
+                                        <li class="detail-product__right-infor-share-list-item">
+                                            <i class="fab fa-instagram"></i>
+                                        </li>
+                                        <li class="detail-product__right-infor-share-list-item">
+                                            <i class="fab fa-youtube-square"></i>
+                                        </li>
+                                        <li class="detail-product__right-infor-share-list-item">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="detail-product__right-btn">
+                                <div class="detail-product__right-btn-wrap">
+                                    <button class="detail-product__right-btn-btn">THÊM VÀO GIỎ HÀNG</button>
+                                    <a href="./check_out.html" class="detail-product__right-btn-link">MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular-product">
+            <div class="container1">
+                <div class="trending-product__title-wrap">
+                    <div class="trending-product__title">
+                        <span class="trending-product__title-text">Sản Phẩm</span>
+                        <span class="trending-product__title-text">Tương Tự</span>
+                    </div>
+                    <div class="trending-product__list-wrap">
+                        <a href="./category.html" class="popular-product__list-item-link">Xem Thêm</a>
+                    </div>
+                </div>
+                <div class="product-main-wrap">
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/dacnhantam.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">50.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Đắc Nhân Tâm</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Dale Carnegie</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/nghigiaulamgiau.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">60.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Think And Grow Rich</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Napoleon Hill</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/chagiauchangheo.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">65.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Rich Dad, Poor Dad</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Robert Kiyosaki</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/nhadaututhongminh.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">55.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Nhà Đầu Tư Thông Minh</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Benjamin Graham</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product-main">
+                        <a class="product-main-link" href="./detail_product.html">
+                            <div class="product-main__overlay">
+                                <div class="product-main__overlay-view">
+                                    <span class="product-main__overlay-view-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="./img/quangganhlodivavuisong.jpg" alt="" class="product-main__img">
+                            <div class="product-main__cost">
+                                <span class="product-main__cost-text">50.000đ</span>
+                            </div>
+                        </a>
+                        <div class="product-main__infor">
+                            <a href="./detail_product.html" class="product-main__title">
+                                <span class="product-main__title-text">Quẳng Gánh Lo Đi & Vui Sống</span>
+                            </a>
+                            <div class="product-main__author">
+                                <span class="product-main__author-text">Dale Carnegie</span>
+                            </div>
+                        </div>
+                        <div class="product-main__rate">
+                            <ul class="product-main__rate-list">
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item product-main__rate-item--active">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li class="product-main__rate-item">
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-main__add-cart">
+                            <span class="product__add-to-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="product-main__add-whish-list">
+                            <span class="product__add-whish-list-icon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="container1">
+                <div class="service-wrap">
+                    <div class="service-column">
+                        <div class="service__infor-wrap">
+                            <div class="service__infor-logo-wrap">
+                                <img src="./img/service_icon/truck.png" alt="" class="service__infor-logo-img">
+                            </div>
+                            <div class="service__description-wrap">
+                                <div class="service__description-title-wrap">
+                                    <span class="service__description-title-text">Miễn Phí Vận Chuyển</span>
+                                </div>
+                                <div class="service__description-description-wrap">
+                                    <span class="service__description-description-text">Tổng giá đơn hàng từ 499k</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="service-column">
+                        <div class="service__infor-wrap">
+                            <div class="service__infor-logo-wrap">
+                                <img src="./img/service_icon/book.png" alt="" class="service__infor-logo-book-img">
+                            </div>
+                            <div class="service__description-wrap">
+                                <div class="service__description-title-wrap">
+                                    <span class="service__description-title-text">14 Ngày Hoàn Trả</span>
+                                </div>
+                                <div class="service__description-description-wrap">
+                                    <span class="service__description-description-text">Hỗ trợ hoàn trả sản phẩm</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="service-column">
+                        <div class="service__infor-wrap">
+                            <div class="service__infor-logo-wrap">
+                                <img src="./img/service_icon/payment.png" alt="" class="service__infor-logo-payment-img">
+                            </div>
+                            <div class="service__description-wrap">
+                                <div class="service__description-title-wrap">
+                                    <span class="service__description-title-text">Thanh Toán An Toàn</span>
+                                </div>
+                                <div class="service__description-description-wrap">
+                                    <span class="service__description-description-text">100% an toàn & bảo mật</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="service-column">
+                        <div class="service__infor-wrap">
+                            <div class="service__infor-logo-wrap">
+                                <img src="./img/service_icon/support.png" alt="" class="service__infor-logo-support-img">
+                            </div>
+                            <div class="service__description-wrap">
+                                <div class="service__description-title-wrap">
+                                    <span class="service__description-title-text">Hỗ Trợ 24/7</span>
+                                </div>
+                                <div class="service__description-description-wrap">
+                                    <span class="service__description-description-text">Hỗ trợ thân thiện</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container1">
+                <div class="footer-wrap">
+                    <div class="footer-colum">
+                        <div class="footer-colum__logo">
+                            <a href="./index.html" class="footer-logo">
+                                <img src="./img/logo.png" alt="" class="footer-logo-img">
+                                <span class="footer-logo__text">HE Books</span>
+                            </a>
+                        </div>
+                        <div class="footer__links">
+                            <div class="footer__links-title">
+                                <span class="footer__link-title-text">Kết Nối:</span>
+                                <div class="footer__links-list-wrap">
+                                <ul class="footer__links-list">
+                                    <li class="footer__link-list-item">
+                                        <a href="#" class="footer__link-list-item--link">
+                                            <span class="footer__link-list-item-icon">
+                                                <i class="fab fa-facebook"></i>
+                                            </span>
+                                        </a>
+                                        </li>
+                                    <li class="footer__link-list-item">
+                                        <a href="#" class="footer__link-list-item--link">
+                                            <span class="footer__link-list-item-icon">
+                                                <i class="fab fa-instagram"></i>
+                                            </span>
+                                        </a>
+                                        </li>
+                                    <li class="footer__link-list-item">
+                                        <a href="#" class="footer__link-list-item--link">
+                                            <span class="footer__link-list-item-icon">
+                                                <i class="fab fa-youtube-square"></i>
+                                            </span>
+                                        </a>
+                                        </li>
+                                    <li class="footer__link-list-item">
+                                        <a href="#" class="footer__link-list-item--link">
+                                            <span class="footer__link-list-item-icon">
+                                                <i class="fab fa-twitter-square"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-colum">
+                        <div class="footer-colum__title">
+                            <span class="footer-colum__title-text">VỀ TRANG WEB</span>
+                        </div>
+                        <ul class="footer-colum__list">
+                           
+                            <li class="footer-colum__item">Liên Hệ</li>
+                            <li class="footer-colum__item">Giới Thiệu</li>
+                            <li class="footer-colum__item">Điều Khoản & Chính Sách</li>
+                        </ul>
+                    </div>
+                    <div class="footer-colum">
+                        <div class="footer-colum__title">
+                            <span class="footer-colum__title-text">TRỢ GIÚP</span>
+                        </div>
+                        <ul class="footer-colum__list">
+                            <li class="footer-colum__item">Câu Hỏi Thường Gặp</li>
+                            <li class="footer-colum__item">Hướng Dẫn Mua Hàng</li>
+                            <li class="footer-colum__item">Phương Thức Thanh Toán</li>
+                        </ul>
+                    </div>
+                    <div class="footer-colum">
+                        <div class="footer-colum__title">
+                            <span class="footer-colum__title-icon">
+                                <i class="far fa-envelope"></i>
+                            </span>
+                            <span class="footer-colum__title-text">ĐĂNG KÝ THÔNG BÁO</span>
+                        </div>
+                        <div class="footer__input-btn-wrap">
+                            <input placeholder="Email của bạn..." class="footer-colum__item-input" type="text">
+                            <button class="footer-colum__button">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./detail.js"></script>
+</body>
+</html>
